@@ -7,7 +7,7 @@
         for(i=0;i<6;i++){
             isflipped[i+1]=0;
             srcs[i]=imgs[i].getAttribute("src");
-            imgs[i].setAttribute("src", "images/cover.png");
+            imgs[i].setAttribute("src", "cover.png");
         }
 
 
@@ -53,22 +53,13 @@ function flip1(index){
 function flipall(index){
                 for(i=1;i<=6;i++){
                     var img = document.getElementById('img'+i);
-                    img.setAttribute("src", "images/cover.png");
+                    img.setAttribute("src", "cover.png");
                     isflipped[i]=0;
                     console.log(i);
 
                 }
 
-        // console.log(index);
-
-        // var img = document.getElementById('img'+index);
-        // // console.log(img.getAttribute("src"));
-        // // srcs[index] = img.getAttribute("src");
-        // img.setAttribute("src", "images/cover.png");
-        // // console.log(img.getAttribute("src"));
-
-        // isflipped[index]=0;
-       
+        
 }        
 
 
